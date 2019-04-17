@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="nodes">
+        Deneme
+    </p>
+
+    <div id="div1">
+        <p id="p1">
+            Burası P1
+        </p>
+        <p id="p2">
+            Burası P2
+        </p>
+
+    </div>
+    <script>
+        // var nodeText=document.getElementById("nodes").childNodes[0].nodeValue;
+        // alert(nodeText);
+
+        var heading=document.createElement("h2");
+        var node=document.createTextNode("Merhaba JavaScript");
+        heading.appendChild(node);
+
+        var div1=document.getElementById("div1");
+        var p2=document.getElementById("p2");
+
+        div1.insertBefore(heading,p2);   
+        alert("P2 yi Çıkar");
+        div1.removeChild(p2);
+        
+        alert("P1 i değiştir.");
+        var heading2=document.createElement("h2");
+        var node2=document.createTextNode("Değişiklik Yapıldı");
+        
+        heading2.appendChild(node2);
+        
+        var p1=document.getElementById("p1");
+        
+        div1.replaceChild(heading2,p1);
+
+    </script>
+</body>
+</html>

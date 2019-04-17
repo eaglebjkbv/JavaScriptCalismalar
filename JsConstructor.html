@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script >
+            var ogrenci={
+                ogrenciAdi:"Bülent",
+                ogrenciSoyadi:"Vardal",
+                tamAdi:function(){
+                    return this.ogrenciAdi+" "+this.ogrenciSoyadi;
+                }
+            }
+            alert(ogrenci.tamAdi());
+    
+            function Musteri(ilk,son,sehir,ulke,yas){
+                this.ilk=ilk;
+                this.son=son;
+                this.sehir=sehir;
+                this.ulke=ulke;
+                this.yas=yas;
+    
+            }
+    
+            var birMusteri=new Musteri("Mehmet","Aydın","izmir","Türkiye",30);
+            alert(birMusteri.ilk);
+    
+        </script>
+</head>
+<body>
+    <h1>Merhaba Hoşgeldiniz...</h1>
+    
+</body>
+</html>
