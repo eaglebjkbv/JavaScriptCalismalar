@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Merhaba" >H1 Tagindan selamlar</h1>
+    <script>
+
+
+        var element=document.getElementById("Merhaba");
+
+        element.addEventListener('click',function(){
+            element.style.color='red';
+            console.log("Tıklandı");
+        });
+
+
+        class deneme{
+
+            constructor(){
+                this.element=document.getElementById('Merhaba');
+                this.element.addEventListener('click',this.mouseTiklandi.bind(this));
+            }
+
+            mouseTiklandi(){
+                this.element.style.color='blue';
+                console.log('Class içindeki de çalıştı..')
+            }
+        }
+
+        const denem=new deneme();
+
+
+
+    </script>
+
+
+
+</body>
+</html>

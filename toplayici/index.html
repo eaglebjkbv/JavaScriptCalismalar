@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <title>İşlem</title>
+    <script>
+        function topla(){
+           document.getElementById("sonuc").innerHTML="Toplam Sonucu :"+
+           (parseInt(document.getElementById('sayi1').value)+
+            parseInt(document.getElementById('sayi2').value)); 
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="sayi1">
+    <input type="text" id="sayi2">
+    <input type="button" value="Topla" onclick="topla();">
+    <h1 id="sonuc" >Toplam Sonucu : </h1>
+</body>
+</html>
