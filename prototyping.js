@@ -5,9 +5,9 @@ function Musteri(ilk,son,sehir,ulke,yas){
     this.ulke=ulke;
     this.yas=yas;
 }
-var birMusteri=new Musteri("Ahmet","Yaman","Yenipazar","Türkiye",42);
+var birMusteri=new Musteri("Tiramisu","Labneru","Tokimiji","Japan",42);
 // Belirli bir object e yeni bir özellik ya da method ekleme için kullanılır.
-Musteri.prototype.eMail="ayaman@gmail.com";
+Musteri.prototype.eMail="triamisu@gmail.com";
 Musteri.prototype.tamAdi=function(){
     return this.ilk+" "+this.son;
 }
